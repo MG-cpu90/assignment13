@@ -1,0 +1,14 @@
+<div>
+    <ul class="not-eaten-burgers">
+        {{#each burgers }}
+        <li>{{burger_name}}<button type="submit">Devour</button></li>
+        {{/each}}
+    </ul>
+    <ul class="devoured-burgers">
+        
+    </ul>
+    <form action="/" method="POST">
+        <textarea type="text" name="wish"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>

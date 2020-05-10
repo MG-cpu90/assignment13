@@ -69,7 +69,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 2. In the `db` folder, create a file named `schema.sql`. Write SQL queries this file that do the following:
 
-   * Create the `burgers_db`.
+   * Create the `burgers_db`.s
    * Switch to or use the `burgers_db`.
    * Create a `burgers` table with these fields:
      * **id**: an auto incrementing int that serves as the primary key.
