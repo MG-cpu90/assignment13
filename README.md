@@ -28,4 +28,4 @@ THEN the burger is removed from the list and added to the "Devoured Burgers" lis
 
 ## Deployed Links
 * GitHub Repository URL: https://github.com/MG-cpu90/assignment13
-* Deployed URL: https://assignment13-eat-da-burger.herokuapp.com
+* Deployed URL: https://whispering-sands-43076.herokuapp.com/
