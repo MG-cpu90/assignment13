@@ -1,14 +1,69 @@
-<div>
-    <ul class="not-eaten-burgers">
-        {{#each burgers }}
-        <li>{{burger_name}}<button type="submit">Devour</button></li>
-        {{/each}}
-    </ul>
-    <ul class="devoured-burgers">
-        
-    </ul>
-    <form action="/" method="POST">
-        <textarea type="text" name="wish"></textarea>
-        <button type="submit">Submit</button>
-    </form>
+<div class="container bg-warning text-center">
+  <div class="container bg-warning text-center">
+    <div class="row">
+      <div class="col-m-12 mx-auto" style="width: 400px;">
+        <div class="jumbotron jumbotron-fluid bg-warning text-center">
+          <div class="container text-center">
+            <h1 class="display-4 text-danger">Eat-Da-Burger!</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container bg-warning text-center">
+    <div class="row">
+      <div class="card bg-warning mb-3 mx-auto" style="width: 18rem;">
+        <img src="cartoon-hamburger2.jpg" class="card-img-top" alt="humburger-jpg">
+        <div class="card-body">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container bg-warning text-center">
+    <div class="row">
+      <div class="col-m-6 mx-auto not-eaten-burgers">
+        <h2>Burgers Available</h2>
+        <div class="list-group">
+          {{#each burgers }}
+          {{#unless this.devoured}}
+          <div class="list-group-item list-group-item-action list-group-item-light">
+            <p>{{burger_name}}</p>
+            <input input type="hidden" class="burger_id" type="text" value={{this.id}}>
+            <button type="submit" class="btn btn-light devourButton" id={{id}}>Devour</button>
+          </div>
+          {{/unless}}
+          {{/each}}
+        </div>
+      </div>
+      <div class="col-m-6 mx-auto devoured-burgers">
+        <h2>Devoured Burgers</h2>
+        <div class="list-group">
+          {{#each burgers }}
+          {{#if this.devoured}}
+          <div class="list-group-item list-group-item-action list-group-item-secondary">{{burger_name}}
+          </div>
+          {{/if}}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container bg-warning text-center">
+    <div class="row">
+      <div class="col-m-12 mx-auto">
+        <br>
+        <form action="/" method="POST" class="devourForm">
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" type="text" name="wish"></textarea>
+            <br>
+            <button type="submit" class="btn btn-primary submitButton" id="submitButton">Submit</button>
+            <br>
+            <br>
+            <label for="exampleFormControlTextarea1">Enter a burger you want to eat and click the "Submit"
+              button!</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
