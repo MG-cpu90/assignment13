@@ -26,6 +26,10 @@ WHEN I click on the "Devour" button for a particular burger
 THEN the burger is removed from the list and added to the "Devoured Burgers" list
 ```
 
+## Application Screenshot
+
+![alt text](./public/assets/img/assignment13-screenshot.png "Assignment 13 Screen Shot")
+
 ## Accesories and Technologies Used:
 ### Languages
 * HTML
