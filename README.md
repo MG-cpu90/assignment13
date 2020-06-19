@@ -42,6 +42,7 @@ THEN the burger is removed from the list and added to the "Devoured Burgers" lis
 * [Google Chrome](http://www.google.com/chrome)
 * [MYSQL](https://www.mysql.com/) (Databases)
 * [Node.js](https://nodejs.org/en/)
+* [Handlebars](https://handlebarsjs.com/)
 * Git/Terminal
 * [Zoom](http://www.zoom.us/)
 * [Slack](https://slack.com/intl/en-ca/)
