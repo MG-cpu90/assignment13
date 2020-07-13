@@ -4,6 +4,12 @@
 The following apllication is a simple restaurant app that allows users to add burgers to a list through a form. Once they have submitted their burger, it will be added to the "Burgers Available on the Menu" list. When the user clicks on the "Devour" button for a particular burger, it will be removed from the list added added to the "Devoured Burgers" list. The application is deployed on Heroku, and uses Node, Express, and Handlebars to generate the html, styling, and functionality of the page.
 
 ## Usage
+### Developer
+* In order to run the following application, first clone the GitHub repository to your local device.
+* Then, open the project root directory in the terminal window, and run "npm install" 
+* After the libraries needed to run the application have been installed, run the "server.js" file through node
+* Navigate to the URL: http://localhost:3000/ in order to view the web application
+
 ### User Story
 
 ```
