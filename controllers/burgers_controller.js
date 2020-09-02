@@ -32,6 +32,7 @@ router.post("/api/burgers", function(req, res) {
         });
 });
 
+// Add
 router.put("/api/burgers/:id", function(req, res) {
     let condition = "id = " + req.params.id;
     burger.update({
