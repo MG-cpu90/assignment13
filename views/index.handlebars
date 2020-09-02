@@ -23,6 +23,7 @@
     <div class="row">
       <div class="col-m-6 mx-auto not-eaten-burgers">
         <h2>Burgers Available on the Menu</h2>
+        {{!-- Render burgers which have been added to the many that are not devoured --}}
         <div class="list-group">
           {{#each burgers }}
           {{#unless this.devoured}}
@@ -37,6 +38,7 @@
       </div>
       <div class="col-m-6 mx-auto devoured-burgers">
         <h2>Devoured Burgers</h2>
+        {{!-- Render burgers which have been devoured --}}
         <div class="list-group">
           {{#each burgers }}
           {{#if this.devoured}}
