@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/MG-cpu90/assignment13#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-handlebars": "^4.0.4",
     "exprss": "0.0.1-security",
     "mysql": "^2.18.1"
